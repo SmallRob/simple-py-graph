@@ -15,10 +15,16 @@ def plot_rhythm_graph(birth_date):
     # Calculate rhythm values
     physical_value, emotional_value, intellectual_value = calculate_biorhythm(birth_date, current_date)
 
-    print("体力节律:", physical_value)
-    print("智商节律:", intellectual_value)
-    print("情商节律:", emotional_value)
-    # Set graph parameters
+    print("今天的体力节律:", physical_value)
+    print("今天的智力节律:", intellectual_value)
+    print("今天的情绪节律:", emotional_value)
+
+    after10_date = current_date + pd.DateOffset(days=10)
+    physical_value10, emotional_value10, intellectual_value10 = calculate_biorhythm(birth_date, after10_date)
+
+    print("10天后的体力节律:", physical_value10)
+    print("10天后的智力节律:", intellectual_value10)
+    print("10天后的情绪节律:", emotional_value10)
 
     # Calculate the start and end dates
     start_date = current_date - pd.DateOffset(days=10)
