@@ -16,8 +16,8 @@ def plot_rhythm_graph(birth_date):
     physical_value, emotional_value, intellectual_value = calculate_biorhythm(birth_date, current_date)
 
     print("体力节律:", physical_value)
-    print("情商节律:", emotional_value)
     print("智商节律:", intellectual_value)
+    print("情商节律:", emotional_value)
     # Set graph parameters
 
     # Calculate the start and end dates
