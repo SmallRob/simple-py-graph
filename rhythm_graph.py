@@ -5,8 +5,9 @@ from biorhythm_utils import calculate_rhythm_value, calculate_biorhythm, get_cur
 
 # Define human rhythm cycles (moved from main script)
 PHYSICAL_CYCLE = 23
-EMOTIONAL_CYCLE = 28
-MENTAL_CYCLE = 33
+MENTAL_CYCLE = 28
+EMOTIONAL_CYCLE = 33
+
 
 def plot_rhythm_graph(birth_date):
     current_date = get_current_date()
@@ -15,9 +16,8 @@ def plot_rhythm_graph(birth_date):
     physical_value, emotional_value, intellectual_value = calculate_biorhythm(birth_date, current_date)
 
     print("体力节律:", physical_value)
-    print("智商节律:", intellectual_value)
     print("情商节律:", emotional_value)
-    
+    print("智商节律:", intellectual_value)
     # Set graph parameters
 
     # Calculate the start and end dates
